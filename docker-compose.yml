@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  documentum.retrieval.api:
+    image: ${DOCKER_REGISTRY-}documentumretrieval
+    build:
+      context: .
+      dockerfile: Documentum.Retrieval.Api/Dockerfile

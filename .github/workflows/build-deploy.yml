@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag documentum-retrieval:$(date +%s)
+      run: docker build . --file Documentum.Retrieval.Api/Dockerfile --tag documentum-retrieval:$(date +%s)
